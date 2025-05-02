@@ -16,7 +16,7 @@ The first five rows of the scaled DataFrame should appear as follows:
 
 The first five rows of the scaled DataFrame
 
-Find the Best Value for k Using the Scaled DataFrame
+## Find the Best Value for k Using the Scaled DataFrame
 Use the elbow method to find the best value for k using the following steps:
 
 Create a list with the number of k values from 1 to 11.
@@ -25,7 +25,9 @@ Create a for loop to compute the inertia with each possible value of k.
 Create a dictionary with the data to plot the elbow curve.
 Plot a line chart with all the inertia values computed with the different values of k to visually identify the optimal value for k.
 Answer the following question in your notebook: What is the best value for k?
-Cluster Cryptocurrencies with K-means Using the Scaled DataFrame
+
+
+## Cluster Cryptocurrencies with K-means Using the Scaled DataFrame
 Use the following steps to cluster the cryptocurrencies for the best value for k on the scaled DataFrame:
 
 Initialize the K-means model with the best value for k.
@@ -36,7 +38,8 @@ Create a scatter plot using hvPlot as follows:
 Set the x-axis as "price_change_percentage_24h" and the y-axis as "price_change_percentage_7d".
 Color the graph points with the labels found using K-means.
 Add the "coin_id" column in the hover_cols parameter to identify the cryptocurrency represented by each data point.
-Optimize Clusters with Principal Component Analysis
+
+## Optimize Clusters with Principal Component Analysis
 Using the original scaled DataFrame, perform a PCA and reduce the features to three principal components.
 
 Retrieve the explained variance to determine how much information can be attributed to each principal component and then answer the following question in your notebook:
@@ -48,7 +51,7 @@ The first five rows of the scaled PCA DataFrame should appear as follows:
 
 The first five rows of the PCA DataFrame
 
-Find the Best Value for k Using the PCA DataFrame
+## Find the Best Value for k Using the PCA DataFrame
 Use the elbow method on the scaled PCA DataFrame to find the best value for k using the following steps:
 
 Create a list with the number of k-values from 1 to 11.
